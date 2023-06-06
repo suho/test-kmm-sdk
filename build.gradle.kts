@@ -1,3 +1,11 @@
+buildscript {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
 plugins {
     //trick: for the same plugin versions in all sub-modules
     id("com.android.library").version("8.0.0").apply(false)

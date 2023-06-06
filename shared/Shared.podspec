@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-    spec.name                     = 'Shared'
+    spec.name                     = 'shared'
     spec.version                  = '1.0'
     spec.homepage                 = 'Link to the Shared Module homepage'
     spec.source                   = { :http=> ''}
@@ -12,13 +12,13 @@ Pod::Spec.new do |spec|
                 
                 
     spec.pod_target_xcconfig = {
-        'KOTLIN_PROJECT_PATH' => ':Shared',
+        'KOTLIN_PROJECT_PATH' => ':shared',
         'PRODUCT_MODULE_NAME' => 'Shared',
     }
                 
     spec.script_phases = [
         {
-            :name => 'Build Shared',
+            :name => 'Build shared',
             :execution_position => :before_compile,
             :shell_path => '/bin/sh',
             :script => <<-SCRIPT

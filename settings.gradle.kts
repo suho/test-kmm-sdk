@@ -14,4 +14,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "KmmSdk"
-include(":Shared")
+include(":shared")
